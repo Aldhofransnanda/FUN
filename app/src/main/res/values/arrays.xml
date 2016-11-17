@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string-array name="judul">
+        <item>How to Play</item>
+        <item>About the Application</item>
+        <item>Version</item>
+        <item>Developer</item>
+    </string-array>
+
+    <string-array name="details">
+        <item>
+            1. Isikan Nama Anda untuk bermain<br />
+            2. Klik Play Button Untuk memulai<br />
+            3. Pilih Mata Pelajaran<br />
+            4. Pilih Chapter yang tersedia<br />
+            5. Mainkan dan dapatkan nilai terbaik<br />
+        </item>
+        <item>bbbb</item>
+        <item>nnnnn</item>
+        <item>ddddd</item>
+    </string-array>
+
+    <array name="places_picture">
+        <item>@drawable/howtoplay</item>
+        <item>@drawable/about</item>
+        <item>@drawable/version</item>
+        <item>@drawable/developer</item>
+    </array>
+</resources>
