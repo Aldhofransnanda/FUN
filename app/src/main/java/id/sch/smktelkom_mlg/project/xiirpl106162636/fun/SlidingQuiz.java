@@ -141,19 +141,15 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
         String query = "INSERT INTO score values (null, '" + lesson + "', '" + chapter + "', '" + score + "');";
         basDat.execSQL(query);
 
-//        QuizHelper db = new QuizHelper(this);
-//        Score poin = new Score(lesson,chapter,score);
-//        db.addScore(poin);
+        Intent intent = new Intent(getBaseContext(),
+                ResultActivity.class);
 
-//        Intent intent = new Intent(getBaseContext(),
-//                ResultActivity.class);
-//
-//        //passing the int value
-//        Bundle b = new Bundle();
-//        b.putInt("score", score); // Your score
-//        b.putStringArray("answers", answers);
-//        intent.putExtras(b); // Put your score to your next
-//        startActivity(intent);
+        //passing the int value
+        Bundle b = new Bundle();
+        b.putInt("score", score); // Your score
+        b.putStringArray("answers", answers);
+        intent.putExtras(b); // Put your score to your next
+        startActivity(intent);
 
     }
 

@@ -33,13 +33,13 @@
         <activity android:name=".FiveFragment" />
         <activity android:name=".SixFragment" />
         <activity android:name=".SevenFragment" />
-        <activity android:name=".EightActivity" />
         <activity android:name=".NineFragment" />
         <activity android:name=".TenFragment" />
         <activity android:name=".OneFragment" />
         <activity android:name=".TwoFragment" />
         <activity android:name=".EightFragment" />
         <activity android:name=".SlidingQuiz"></activity>
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>

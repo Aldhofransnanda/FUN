@@ -9,18 +9,21 @@ import android.app.Activity;
 public class Score extends Activity {
     private int ID_SCORE;
     private int ID_LESSON;
+    private String LESSON_NAME;
     private int CHAPTER_ID;
     private int SCORE_VALUE;
 
     public Score() {
         ID_SCORE = 0;
         ID_LESSON = 0;
+        LESSON_NAME = "";
         CHAPTER_ID = 0;
         SCORE_VALUE = 0;
     }
 
-    public Score(int lESSON, int cHAPTER, int sCORE) {
+    public Score(int lESSON, String lESSON_nAME, int cHAPTER, int sCORE) {
         ID_LESSON = lESSON;
+        LESSON_NAME = lESSON_nAME;
         CHAPTER_ID = cHAPTER;
         SCORE_VALUE = sCORE;
     }
@@ -36,6 +39,14 @@ public class Score extends Activity {
 
     public void setID_LESSON(int iD_lESSON) {
         ID_LESSON = iD_lESSON;
+    }
+
+    public String getLESSON_NAME() {
+        return LESSON_NAME;
+    }
+
+    public void setLESSON_NAME(String nAME_lESSON) {
+        LESSON_NAME = nAME_lESSON;
     }
 
     public int getCHAPTER_ID() {
