@@ -27,7 +27,8 @@
         <activity android:name=".HelpActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".PlayActivity" />
-        <activity android:name=".PlayDetailActivity"></activity>
+        <activity android:name=".PlayDetailActivity" />
+        <activity android:name=".SlidingQuiz"></activity>
     </application>
 
 </manifest>
