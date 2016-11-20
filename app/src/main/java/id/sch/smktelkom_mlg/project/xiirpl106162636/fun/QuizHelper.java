@@ -74,8 +74,10 @@ public class QuizHelper extends SQLiteOpenHelper {
         addQuestion();
         addChapter();
         addLesson();
+        addScore();
         // db.close();
     }
+
 
     private void addLesson() {
         Lesson l1 = new Lesson("Bahasa Indonesia");
@@ -344,6 +346,11 @@ public class QuizHelper extends SQLiteOpenHelper {
         // END
     }
 
+    private void addScore() {
+        Score s1 = new Score(1, 1, 80);
+        this.addScore(s1);
+    }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldV, int newV) {
@@ -384,6 +391,15 @@ public class QuizHelper extends SQLiteOpenHelper {
         values.put(LESSON_NAME, lesson.getLESSON_NAME());
 
         dbase.insert(TABLE_LESSON, null, values);
+    }
+
+    public void addScore(Score score) {
+        ContentValues values = new ContentValues();
+        values.put(LESSON_ID, score.getID_LESSON());
+        values.put(CHAP_ID, score.getCHAPTER_ID());
+        values.put(SCORE_VALUE, score.getSCORE_VALUE());
+
+        dbase.insert(TABLE_SCORE, null, values);
     }
 
     public List<Question> getAllQuestions(int lesson, int chapter) {
