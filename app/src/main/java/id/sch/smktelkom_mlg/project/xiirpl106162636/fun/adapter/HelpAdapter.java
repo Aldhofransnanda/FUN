@@ -1,5 +1,7 @@
 package id.sch.smktelkom_mlg.project.xiirpl106162636.fun.adapter;
 
+import android.content.Context;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,9 +21,11 @@ import id.sch.smktelkom_mlg.project.xiirpl106162636.fun.model.help;
 public class HelpAdapter extends RecyclerView.Adapter<HelpAdapter.ViewHolder> {
 
     ArrayList<help> helpList;
+    IHelpAdapter mIHelpAdapter;
 
-    public HelpAdapter(ArrayList<help> helpList) {
+    public HelpAdapter(Context context, ArrayList<help> helpList) {
         this.helpList = helpList;
+        mIHelpAdapter = (IHelpAdapter) context;
     }
 
     @Override
@@ -35,7 +39,7 @@ public class HelpAdapter extends RecyclerView.Adapter<HelpAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         help help = helpList.get(position);
         holder.tvJudul.setText(help.judul);
-        holder.ivFoto.setImageDrawable(help.foto);
+        holder.ivFoto.setImageURI(Uri.parse(help.foto));
 
     }
 
@@ -45,6 +49,10 @@ public class HelpAdapter extends RecyclerView.Adapter<HelpAdapter.ViewHolder> {
             return helpList.size();
 
         return 0;
+    }
+
+    public interface IHelpAdapter {
+        void doClick(int pos);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -57,6 +65,12 @@ public class HelpAdapter extends RecyclerView.Adapter<HelpAdapter.ViewHolder> {
             ivFoto = (ImageView) itemView.findViewById(R.id.imageView);
             tvJudul = (TextView) itemView.findViewById(R.id.textViewJudul);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mIHelpAdapter.doClick(getAdapterPosition());
+                }
+            });
         }
     }
 }

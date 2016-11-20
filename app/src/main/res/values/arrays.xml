@@ -22,16 +22,24 @@
     </string-array>
 
     <string-array name="details">
-        <item>
-            1. Isikan Nama Anda untuk bermain<br />
-            2. Klik Play Button Untuk memulai<br />
-            3. Pilih Mata Pelajaran<br />
-            4. Pilih Chapter yang tersedia<br />
-            5. Mainkan dan dapatkan nilai terbaik<br />
+        <item>\n
+            1. Isikan Nama Anda untuk bermain \n
+            2. Klik Play Button Untuk memulai \n
+            3. Pilih Mata Pelajaran \n
+            4. Pilih Chapter yang tersedia \n
+            5. Mainkan dan dapatkan nilai terbaik \n
+            6. Klik Statistic untuk melihat statistik \n \t\t anda \n
         </item>
-        <item>bbbb</item>
-        <item>nnnnn</item>
-        <item>ddddd</item>
+        <item>\nFUN merupakan aplikasi edukasi berupa kuis untuk media pembelajaran dan latihan mata pelajaran Ujian Nasional khususnya untuk SMK</item>
+        <item>\n FUN V0.1</item>
+        <item>
+            \n
+            Aldho Yudha F. \n\n
+            Erda Ulhaq B. D. \n\n
+            M. Pandu Widodo \n\n
+            Shella Annisa F. \n\n
+
+        </item>
     </string-array>
 
     <array name="places_picture">
