@@ -73,7 +73,17 @@ public class QuizHelper extends SQLiteOpenHelper {
         db.execSQL(sql);
         addQuestion();
         addChapter();
+        addLesson();
         // db.close();
+    }
+
+    private void addLesson() {
+        Lesson l1 = new Lesson("Bahasa Indonesia");
+        this.addLesson(l1);
+        Lesson l2 = new Lesson("Matematika");
+        this.addLesson(l2);
+        Lesson l3 = new Lesson("Bahasa Inggris");
+        this.addLesson(l3);
     }
 
     private void addChapter() {
@@ -367,6 +377,13 @@ public class QuizHelper extends SQLiteOpenHelper {
         values.put(CHAP_NUMBER, chapter.getCHAPTER_NUMBER());
 
         dbase.insert(TABLE_CHAPTER, null, values);
+    }
+
+    public void addLesson(Lesson lesson) {
+        ContentValues values = new ContentValues();
+        values.put(LESSON_NAME, lesson.getLESSON_NAME());
+
+        dbase.insert(TABLE_LESSON, null, values);
     }
 
     public List<Question> getAllQuestions(int lesson, int chapter) {
