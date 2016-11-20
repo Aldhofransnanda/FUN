@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.project.xiirpl106162636.fun;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -29,6 +30,11 @@ public class TenFragment extends Fragment {
 
         LayoutInflater lf = getActivity().getLayoutInflater();
         View view = lf.inflate(R.layout.fragment_ten, container, false); //pass the correct layout name for the fragment
+
+        final Intent lessons = getActivity().getIntent();
+        Bundle l = lessons.getExtras();
+        lesson = l.getInt("lesson");
+        chapter = l.getInt("chapter");
 
         QuizHelper db = new QuizHelper(getActivity());  // my question bank class
         quesList = db.getAllQuestions(lesson, chapter);  // this will fetch all questionable questions

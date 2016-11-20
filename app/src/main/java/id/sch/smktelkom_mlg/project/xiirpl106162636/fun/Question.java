@@ -31,9 +31,9 @@ public class Question extends Activity {
         ANSWER = "";
     }
 
-    public Question(int iD_cHAPTER, int iD_lESSON, String qUESTION, String oPTA, String oPTB, String oPTC, String oPTD, String oPTE, String aNSWER) {
-        ID_CHAPTER = iD_cHAPTER;
+    public Question(int iD_lESSON, int iD_cHAPTER, String qUESTION, String oPTA, String oPTB, String oPTC, String oPTD, String oPTE, String aNSWER) {
         ID_LESSON = iD_lESSON;
+        ID_CHAPTER = iD_cHAPTER;
         QUESTION = qUESTION;
         OPTA = oPTA;
         OPTB = oPTB;

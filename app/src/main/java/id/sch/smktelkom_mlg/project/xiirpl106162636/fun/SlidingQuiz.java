@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.project.xiirpl106162636.fun;
 
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,7 +16,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-//import id.sch.smktelkom_mlg.learn.cobaquiz.OneFragment.OnDataPass;
 
 
 public class SlidingQuiz extends AppCompatActivity implements FragmentCommunication {
@@ -37,8 +37,8 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
     int qid = 0;
     int defaultValue = 0;
     int page = 0;
-    int chapter = 1;
-    int lesson = 1;
+
+    int lesson = 0, chapter = 0;
     String answers[] = {"", "", "", "", "", "", "", "", "", "", "", ""};
     String kunci[] = {"", "", "", "", "", "", "", "", "", "", "", ""};
 
@@ -55,8 +55,14 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        final Intent lesson = getIntent();
+        Bundle l = lesson.getExtras();
+
+        final int j = l.getInt("lesson");
+        final int k = l.getInt("chapter");
+
         QuizHelper db = new QuizHelper(this);  // my question bank class
-        quesList = db.getAllQuestions(lesson, chapter);  // this will fetch all quetonall questions
+        quesList = db.getAllQuestions(j, k);  // this will fetch all quetonall questions
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("START"));
@@ -74,8 +80,7 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final PagerAdapter adapter = new PagerAdapter
-                (getSupportFragmentManager(), tabLayout.getTabCount());
+        final PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -140,15 +145,15 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
 //        Score poin = new Score(lesson,chapter,score);
 //        db.addScore(poin);
 
-        Intent intent = new Intent(getBaseContext(),
-                ResultActivity.class);
-
-        //passing the int value
-        Bundle b = new Bundle();
-        b.putInt("score", score); // Your score
-        b.putStringArray("answers", answers);
-        intent.putExtras(b); // Put your score to your next
-        startActivity(intent);
+//        Intent intent = new Intent(getBaseContext(),
+//                ResultActivity.class);
+//
+//        //passing the int value
+//        Bundle b = new Bundle();
+//        b.putInt("score", score); // Your score
+//        b.putStringArray("answers", answers);
+//        intent.putExtras(b); // Put your score to your next
+//        startActivity(intent);
 
     }
 
