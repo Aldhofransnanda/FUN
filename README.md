@@ -32,5 +32,7 @@ Sekolah : SMK Telkom Malang
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailPlayChapter.png)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ChapterKlik.jpeg)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Soal.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Skor.jpeg)<br><br>
+
 
 <b>FUN (Fight for UN)</b>
