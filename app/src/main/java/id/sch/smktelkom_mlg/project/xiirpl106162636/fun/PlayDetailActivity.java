@@ -43,7 +43,7 @@ public class PlayDetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int chapter = 2;
                 Intent intent = new Intent(PlayDetailActivity.this, SlidingQuiz.class);
-                intent.putExtra("lesson", j);
+                intent.putExtra("lesson", k);
                 intent.putExtra("chapter", chapter);
                 startActivity(intent);
             }
@@ -53,7 +53,7 @@ public class PlayDetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int chapter = 3;
                 Intent intent = new Intent(PlayDetailActivity.this, SlidingQuiz.class);
-                intent.putExtra("lesson", j);
+                intent.putExtra("lesson", k);
                 intent.putExtra("chapter", chapter);
                 startActivity(intent);
             }
