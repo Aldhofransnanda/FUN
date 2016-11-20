@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="id.sch.smktelkom_mlg.project.xiirpl106162636.fun.StartFragment">
+
+    <TextView
+        android:id="@+id/textViewMulai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:text="SELAMAT MENGERJAKAN"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:text="Swipe ke kiri untuk memulai"
+        android:textAlignment="center" />
+
+</LinearLayout>
