@@ -27,7 +27,19 @@
         <activity android:name=".HelpActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".PlayActivity" />
-        <activity android:name=".PlayDetailActivity"></activity>
+        <activity android:name=".PlayDetailActivity" />
+        <activity android:name=".ThreeFragment" />
+        <activity android:name=".FourFragment" />
+        <activity android:name=".FiveFragment" />
+        <activity android:name=".SixFragment" />
+        <activity android:name=".SevenFragment" />
+        <activity android:name=".EightActivity" />
+        <activity android:name=".NineFragment" />
+        <activity android:name=".TenFragment" />
+        <activity android:name=".OneFragment" />
+        <activity android:name=".TwoFragment" />
+        <activity android:name=".EightFragment" />
+        <activity android:name=".SlidingQuiz"></activity>
     </application>
 
 </manifest>
