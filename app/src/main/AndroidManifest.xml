@@ -25,7 +25,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".HelpActivity" />
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".PlayActivity" />
+        <activity android:name=".PlayDetailActivity"></activity>
     </application>
 
 </manifest>

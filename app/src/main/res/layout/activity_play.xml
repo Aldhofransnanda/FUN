@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.project.xiirpl106162636.fun.PlayActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewMat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mat" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MATEMATIKA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:text="4 Bab Belum DIkerjakan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewBin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bindo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
+
+            <TextView
+                android:id="@+id/textViewBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BAHASA INDONESIA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBig"
+                android:text="2 Bab Belum DIkerjakan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewBig"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bing" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BAHASA INGGRIS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView5"
+                android:text="6 Bab Belum DIkerjakan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
