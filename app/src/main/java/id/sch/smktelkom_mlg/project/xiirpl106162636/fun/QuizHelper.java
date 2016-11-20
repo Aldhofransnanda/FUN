@@ -72,7 +72,21 @@ public class QuizHelper extends SQLiteOpenHelper {
                 + SCORE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + LESSON_ID + "INTEGER, " + CHAP_ID + "INTEGER, " + SCORE_VALUE + " INTEGER)";
         db.execSQL(sql);
         addQuestion();
+        addChapter();
         // db.close();
+    }
+
+    private void addChapter() {
+        Chapter c1 = new Chapter(1, 1);
+        this.addChapter(c1);
+        Chapter c2 = new Chapter(1, 2);
+        this.addChapter(c2);
+        Chapter c3 = new Chapter(1, 3);
+        this.addChapter(c3);
+        Chapter c4 = new Chapter(1, 4);
+        this.addChapter(c4);
+        Chapter c5 = new Chapter(1, 5);
+        this.addChapter(c5);
     }
 
     private void addQuestion() {
@@ -347,6 +361,13 @@ public class QuizHelper extends SQLiteOpenHelper {
         dbase.insert(TABLE_QUEST, null, values);
     }
 
+    public void addChapter(Chapter chapter) {
+        ContentValues values = new ContentValues();
+        values.put(LESSON_ID, chapter.getID_LESSON());
+        values.put(CHAP_NUMBER, chapter.getCHAPTER_NUMBER());
+
+        dbase.insert(TABLE_CHAPTER, null, values);
+    }
 
     public List<Question> getAllQuestions(int lesson, int chapter) {
         List<Question> quesList = new ArrayList<Question>();
