@@ -137,8 +137,18 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
             }
         }
 
+
+        String mapel;
+        if (lesson == 1)
+            mapel = "Bahasa Indonesia";
+        else if (lesson == 2)
+            mapel = "Bahasa Indonesia";
+        else
+            mapel = "Bahasa Indonesia";
+
+
         basDat = openOrCreateDatabase("mathsone", Context.MODE_PRIVATE, null);
-        String query = "INSERT INTO score values (null, '" + lesson + "', '" + chapter + "', '" + score + "');";
+        String query = "INSERT INTO score values (null, '" + lesson + "', '" + mapel + "', '" + chapter + "', '" + score + "');";
         basDat.execSQL(query);
 
         Intent intent = new Intent(getBaseContext(),

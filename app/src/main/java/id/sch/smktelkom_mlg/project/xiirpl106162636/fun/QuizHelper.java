@@ -69,12 +69,11 @@ public class QuizHelper extends SQLiteOpenHelper {
                 + LESSON_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + LESSON_NAME + " TEXT)";
         db.execSQL(sql);
         sql = "CREATE TABLE IF NOT EXISTS " + TABLE_SCORE + " ( "
-                + SCORE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + LESSON_ID + "INTEGER, " + CHAP_ID + "INTEGER, " + SCORE_VALUE + " INTEGER)";
+                + SCORE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + LESSON_ID + "INTEGER, " + LESSON_NAME + " TEXT, " + CHAP_ID + "INTEGER, " + SCORE_VALUE + " INTEGER)";
         db.execSQL(sql);
         addQuestion();
         addChapter();
         addLesson();
-        addScore();
         // db.close();
     }
 
@@ -346,12 +345,6 @@ public class QuizHelper extends SQLiteOpenHelper {
         // END
     }
 
-    private void addScore() {
-        Score s1 = new Score(1, 1, 80);
-        this.addScore(s1);
-    }
-
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldV, int newV) {
         // Drop older table if existed
@@ -440,9 +433,9 @@ public class QuizHelper extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 HashMap<String, String> map = new HashMap<String, String>();
-                map.put("lesson", cursor.getString(1));
-                map.put("chapter", cursor.getString(2));
-                map.put("score", cursor.getString(3));
+                map.put("lesson", cursor.getString(2));
+                map.put("chapter", cursor.getString(3));
+                map.put("score", cursor.getString(4));
                 scoreList.add(map);
             } while (cursor.moveToNext());
         }

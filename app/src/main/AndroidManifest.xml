@@ -38,8 +38,10 @@
         <activity android:name=".OneFragment" />
         <activity android:name=".TwoFragment" />
         <activity android:name=".EightFragment" />
-        <activity android:name=".SlidingQuiz"></activity>
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".SlidingQuiz" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".View_Score_Entry"></activity>
     </application>
 
 </manifest>
