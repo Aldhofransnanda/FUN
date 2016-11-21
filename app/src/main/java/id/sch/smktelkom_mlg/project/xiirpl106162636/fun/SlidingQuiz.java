@@ -37,6 +37,7 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
     int qid = 0;
     int defaultValue = 0;
     int page = 0;
+    int j, k = 0;
 
     int lesson = 0, chapter = 0;
     String answers[] = {"", "", "", "", "", "", "", "", "", "", "", ""};
@@ -58,8 +59,8 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
         final Intent lesson = getIntent();
         Bundle l = lesson.getExtras();
 
-        final int j = l.getInt("lesson");
-        final int k = l.getInt("chapter");
+        j = l.getInt("lesson");
+        k = l.getInt("chapter");
 
         QuizHelper db = new QuizHelper(this);  // my question bank class
         quesList = db.getAllQuestions(j, k);  // this will fetch all quetonall questions
@@ -139,16 +140,16 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
 
 
         String mapel;
-        if (lesson == 1)
+        if (j == 1)
             mapel = "Bahasa Indonesia";
-        else if (lesson == 2)
-            mapel = "Bahasa Indonesia";
+        else if (j == 2)
+            mapel = "Matematika";
         else
-            mapel = "Bahasa Indonesia";
+            mapel = "Bahasa Inggris";
 
 
         basDat = openOrCreateDatabase("mathsone", Context.MODE_PRIVATE, null);
-        String query = "INSERT INTO score values (null, '" + lesson + "', '" + mapel + "', '" + chapter + "', '" + score + "');";
+        String query = "INSERT INTO score values (null, '" + j + "', '" + mapel + "', '" + k + "', '" + score + "');";
         basDat.execSQL(query);
 
         Intent intent = new Intent(getBaseContext(),

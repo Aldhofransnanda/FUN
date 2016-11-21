@@ -30,7 +30,6 @@ public class ResultActivity extends Activity {
         answers = b.getStringArray("answers");
 
         textResult.setText("Skor akhir anda di chapter ini adalah " + " " + score + ".");
-
     }
 
     public void playagain(View o) {
