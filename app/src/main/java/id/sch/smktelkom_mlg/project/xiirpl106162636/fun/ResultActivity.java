@@ -32,12 +32,26 @@ public class ResultActivity extends Activity {
         textResult.setText("Skor akhir anda di chapter ini adalah " + " " + score + ".");
     }
 
-    public void playagain(View o) {
+    /*public void playagain(View o) {
 
         Intent intent = new Intent(this, SlidingQuiz.class);
 
         startActivity(intent);
 
 
+    }*/
+
+    public void home(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
+
+    /*findViewById(R.id.buttonHome).setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(MainActivity.this, PlayActivity.class);
+            startActivity(intent);
+        }
+    });*/
 }
+

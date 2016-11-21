@@ -19,19 +19,19 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="#000000"
-        android:onClick="playagain"
-        android:padding="20dp"
-        android:text="PLAY AGAIN"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
-
+    <!-- <Button
+         android:id="@+id/btn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginTop="50dp"
+         android:background="#000000"
+         android:onClick="playagain"
+         android:padding="20dp"
+         android:text="PLAY AGAIN"
+         android:textColor="#ffffff"
+         android:textSize="20sp" />
+ -->
     <TextView
         android:id="@+id/textViewAnswer"
         android:layout_width="match_parent"
@@ -41,9 +41,11 @@
         tools:text="Answer" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonHome"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="ButtonHome" />
+        android:layout_gravity="center_horizontal"
+        android:onClick="home"
+        android:text="Home" />
 
 </LinearLayout>
