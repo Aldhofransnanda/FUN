@@ -20,8 +20,9 @@ public class PlayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 lesson = 2;
-                Intent intent = new Intent(PlayActivity.this, PlayDetailActivity.class);
-                intent.putExtra("lesson", lesson);
+                Intent intent = new Intent(PlayActivity.this, Popup.class);
+                //Intent intent = new Intent(PlayActivity.this, PlayDetailActivity.class);
+                //intent.putExtra("lesson", lesson);
                 startActivity(intent);
             }
         });

@@ -41,7 +41,12 @@
         <activity android:name=".SlidingQuiz" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".ScoreActivity" />
-        <activity android:name=".View_Score_Entry"></activity>
+        <activity android:name=".View_Score_Entry" />
+        <activity
+            android:name=".Popup"
+            android:theme="@style/AppTheme.CustomTheme">
+
+        </activity>
     </application>
 
 </manifest>
