@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,20 +10,27 @@
     <TextView
         android:id="@+id/textViewMulai"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_weight="0.5"
+        android:layout_weight="0.4"
         android:gravity="center_vertical"
         android:text="SELAMAT MENGERJAKAN"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@color/colorPrimaryDark" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.3"
+        app:srcCompat="@drawable/left" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_weight="0.5"
+        android:layout_weight="0.3"
         android:gravity="center_vertical"
         android:text="Swipe ke kiri untuk memulai"
         android:textAlignment="center" />

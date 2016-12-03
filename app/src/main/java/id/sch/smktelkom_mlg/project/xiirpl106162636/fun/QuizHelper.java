@@ -9,6 +9,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -97,6 +98,11 @@ public class QuizHelper extends SQLiteOpenHelper {
         this.addChapter(c4);
         Chapter c5 = new Chapter(1, 5);
         this.addChapter(c5);
+    }
+
+    private void addScore() {
+        Score s1 = new Score("Bahasa Indonesia", 1, 95);
+        this.addScore(s1);
     }
 
     private void addQuestion() {
@@ -659,6 +665,10 @@ public class QuizHelper extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
         // return quest list
+
+        Log.d("questions", quesList.toString());
+
+
         return quesList;
     }
 
@@ -666,7 +676,7 @@ public class QuizHelper extends SQLiteOpenHelper {
         ArrayList<HashMap<String, String>> scoreList;
         scoreList = new ArrayList<HashMap<String, String>>();
 
-        String selectQuery = "SELECT  * FROM score";
+        String selectQuery = "SELECT  * FROM " + TABLE_SCORE;
         SQLiteDatabase database = this.getWritableDatabase();
         Cursor cursor = database.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
@@ -679,7 +689,39 @@ public class QuizHelper extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
 
+        Log.d("student datas", scoreList.toString());
+
         return scoreList;
+    }
+
+    public List<Score> getDataFromDB() {
+        List<Score> modelList = new ArrayList<Score>();
+        String query = "select * from " + TABLE_SCORE;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+
+        Log.d("cursor", cursor.toString());
+
+
+        if (cursor.moveToFirst()) {
+            do {
+                Score model = new Score();
+                model.setID_SCORE(cursor.getInt(0));
+                model.setID_LESSON(cursor.getInt(1));
+                model.setLESSON_NAME(cursor.getString(2));
+                model.setCHAPTER_ID(cursor.getInt(3));
+                model.setSCORE_VALUE(cursor.getInt(4));
+
+                modelList.add(model);
+            } while (cursor.moveToNext());
+        }
+
+
+        Log.d("student data", modelList.toString());
+
+
+        return modelList;
     }
 
 

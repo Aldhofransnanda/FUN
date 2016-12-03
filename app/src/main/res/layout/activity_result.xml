@@ -15,6 +15,7 @@
         android:layout_marginTop="50dp"
         android:padding="10dp"
         android:text="Large Text"
+        android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -36,16 +37,22 @@
         android:id="@+id/textViewAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+        android:textSize="100sp"
         tools:text="Answer" />
 
     <Button
         android:id="@+id/buttonHome"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
         android:layout_gravity="center_horizontal"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:onClick="home"
-        android:text="Home" />
+        android:text="Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
 
 </LinearLayout>

@@ -7,23 +7,27 @@ import android.widget.SimpleAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class ScoreActivity extends ListActivity {
 
     QuizHelper controller = new QuizHelper(this);
+    List<Score> dbList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
 
-        ArrayList<HashMap<String, String>> kampusList = controller.getScore();
+        dbList = new ArrayList<Score>();
+        dbList = controller.getDataFromDB();
+
+        ArrayList<HashMap<String, String>> scoreList = controller.getScore();
         /* jikta tidak kosong, tampilkan data kampus ke ListView
 		 *
 		 */
-
         ListAdapter adapter = new SimpleAdapter(ScoreActivity.this,
-                kampusList, R.layout.activity_view__score__entry, new String[]{
+                scoreList, R.layout.activity_view__score__entry, new String[]{
                 "lesson", "chapter", "score"}, new int[]{
                 R.id.mataPelajaran, R.id.chapterSoal, R.id.skorSoal});
         setListAdapter(adapter);

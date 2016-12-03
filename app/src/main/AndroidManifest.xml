@@ -45,9 +45,7 @@
         <activity android:name=".View_Score_Entry" />
         <activity
             android:name=".Popup"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
+            android:theme="@style/AppTheme.CustomTheme"></activity>
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -152,6 +153,9 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
         String query = "INSERT INTO score values (null, '" + j + "', '" + mapel + "', '" + k + "', '" + score + "');";
         basDat.execSQL(query);
 
+        Log.d("questions", query);
+
+
         Intent intent = new Intent(getBaseContext(),
                 ResultActivity.class);
 
@@ -160,6 +164,7 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
         b.putInt("score", score); // Your score
         b.putStringArray("answers", answers);
         intent.putExtras(b); // Put your score to your next
+        onBackPressed();
         startActivity(intent);
 
     }

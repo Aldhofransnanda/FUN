@@ -23,6 +23,7 @@ public class PlayActivity extends AppCompatActivity {
                 Intent intent = new Intent(PlayActivity.this, Popup.class);
                 //Intent intent = new Intent(PlayActivity.this, PlayDetailActivity.class);
                 //intent.putExtra("lesson", lesson);
+                //onBackPressed();
                 startActivity(intent);
             }
         });
@@ -33,6 +34,7 @@ public class PlayActivity extends AppCompatActivity {
                 lesson = 1;
                 Intent intent = new Intent(PlayActivity.this, PlayDetailActivity.class);
                 intent.putExtra("lesson", lesson);
+                onBackPressed();
                 startActivity(intent);
             }
         });
@@ -43,6 +45,7 @@ public class PlayActivity extends AppCompatActivity {
                 lesson = 3;
                 Intent intent = new Intent(PlayActivity.this, PlayDetailActivity.class);
                 intent.putExtra("lesson", lesson);
+                onBackPressed();
                 startActivity(intent);
             }
         });

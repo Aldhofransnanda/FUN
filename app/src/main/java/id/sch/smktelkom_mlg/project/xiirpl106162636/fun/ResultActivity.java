@@ -5,7 +5,6 @@ package id.sch.smktelkom_mlg.project.xiirpl106162636.fun;
  */
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -29,7 +28,8 @@ public class ResultActivity extends Activity {
         int score = b.getInt("score");
         answers = b.getStringArray("answers");
 
-        textResult.setText("Skor akhir anda di chapter ini adalah " + " " + score + ".");
+        textResult.setText("Skor akhir anda di chapter ini adalah");
+        answer.setText("" + score + "");
     }
 
     /*public void playagain(View o) {
@@ -42,8 +42,9 @@ public class ResultActivity extends Activity {
     }*/
 
     public void home(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        onBackPressed();
+//        Intent intent = new Intent(this, MainActivity.class);
+//        startActivity(intent);
     }
 
     /*findViewById(R.id.buttonHome).setOnClickListener(new View.OnClickListener() {

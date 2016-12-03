@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_play_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="id.sch.smktelkom_mlg.project.xiirpl106162636.fun.PlayDetailActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,29 +35,34 @@
             android:visibility="invisible"
             tools:text="coba lesson" />
 
-
         <Button
             android:id="@+id/buttonChapter1"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
 
-            android:text="Chapter 1" />
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Chapter 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
 
         <Button
             android:id="@+id/buttonChapter2"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Chapter 2" />
+            android:layout_height="70dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Chapter 2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
 
         <Button
             android:id="@+id/buttonChapter3"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Chapter 3" />
+            android:layout_height="70dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Chapter 3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

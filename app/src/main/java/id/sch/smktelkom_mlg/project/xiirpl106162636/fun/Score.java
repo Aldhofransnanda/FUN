@@ -21,8 +21,7 @@ public class Score extends Activity {
         SCORE_VALUE = 0;
     }
 
-    public Score(int lESSON, String lESSON_nAME, int cHAPTER, int sCORE) {
-        ID_LESSON = lESSON;
+    public Score(String lESSON_nAME, int cHAPTER, int sCORE) {
         LESSON_NAME = lESSON_nAME;
         CHAPTER_ID = cHAPTER;
         SCORE_VALUE = sCORE;
@@ -31,6 +30,10 @@ public class Score extends Activity {
 
     public int getID_SCORE() {
         return ID_SCORE;
+    }
+
+    public void setID_SCORE(int iD_sCORE) {
+        ID_SCORE = iD_sCORE;
     }
 
     public int getID_LESSON() {
