@@ -42,15 +42,10 @@ public class PlayDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int chapter = 2;
-                if (k == 3) {
-                    Intent intent = new Intent(PlayDetailActivity.this, Popup.class);
-                    startActivity(intent);
-                } else {
                 Intent intent = new Intent(PlayDetailActivity.this, SlidingQuiz.class);
                 intent.putExtra("lesson", k);
                 intent.putExtra("chapter", chapter);
                     startActivity(intent);
-                }
 
 
             }
@@ -59,10 +54,9 @@ public class PlayDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int chapter = 3;
-                Intent intent = new Intent(PlayDetailActivity.this, Popup.class);
-                //Intent intent = new Intent(PlayDetailActivity.this, SlidingQuiz.class);
-                //intent.putExtra("lesson", k);
-                //intent.putExtra("chapter", chapter);
+                Intent intent = new Intent(PlayDetailActivity.this, SlidingQuiz.class);
+                intent.putExtra("lesson", k);
+                intent.putExtra("chapter", chapter);
                 startActivity(intent);
             }
         });

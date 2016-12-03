@@ -17,10 +17,9 @@ import java.util.List;
 public class QuizHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     // Database Name
-    private static final String DATABASE_NAME = "mathsone";
+    private static final String DATABASE_NAME = "db_fun";
     // tasks table name
     private static final String TABLE_QUEST = "quest";
-    private static final String TABLE_USER = "user";
     private static final String TABLE_SCORE = "score";
     private static final String TABLE_CHAPTER = "chapter";
     private static final String TABLE_LESSON = "lesson";
@@ -342,6 +341,246 @@ public class QuizHelper extends SQLiteOpenHelper {
                 "but",
                 "because");
         this.addQuestion(q30);
+        Question q31 = new Question(3, 2, "ARE YOU LOOKING FOR A JOB?\nEmployers from around the country are interested in talking with you!\nWe have gathered over 100 companies, representing a variety of industries. To meet with you at the JAKARTA JOB FAIR on Saturday and Sunday, May 7th -8th from 9.00 a.m. to 4.00. p.m.\nLocation: Jakarta Convention Center, Jln. Gunung Mas No. 34/Jakarta Pusat 16007.\nParking is available, no registration is necessary. Bring copies of your resume.\nFor more details, call our JCC office at: 021-415627125 / 021-415627126\nEmail : Jakartajobfair@gmail.com\nWhat should interested readers do ?\nA. Send the employers their resume\nB. Call to register\nC. Go to the fair\nD. Check the website\nE. Send email",
+                "Send the employers their resume",
+                "Call to register",
+                "Go to the fair",
+                "Check the website",
+                "Send email",
+                "Go to the fair");
+        this.addQuestion(q31);
+        Question q32 = new Question(3, 2, "ARE YOU LOOKING FOR A JOB?\nEmployers from around the country are interested in talking with you!\nWe have gathered over 100 companies, representing a variety of industries. To meet with you at the JAKARTA JOB FAIR on Saturday and Sunday, May 7th -8th from 9.00 a.m. to 4.00. p.m.\nLocation: Jakarta Convention Center, Jln. Gunung Mas No. 34/Jakarta Pusat 16007.\nParking is available, no registration is necessary. Bring copies of your resume.\nFor more details, call our JCC office at: 021-415627125 / 021-415627126\nEmail : Jakartajobfair@gmail.com\nWhere will the fair be held?\nA. At employer's office.\nB. At locations around the country.\nC. At the meeting center in Jakarta Convention Center.\nD. In Jakarta Convention Center\nE. At the 100 companies",
+                "At employer's office",
+                "At locations around the country",
+                "At the meeting center in Jakarta Convention Center",
+                "In Jakarta Convention Center",
+                "At 100 companies",
+                "In Jakarta Convention Center");
+        this.addQuestion(q32);
+        Question q33 = new Question(3, 2, "OFFICE MEMO\nTo : Aliya Latansina\nFrom : John Deep\nDate : March 10th, 2012\nPlease, send the weekly financial report to Mr. Erlan Baskoro  by E-mail at: belajarenglishyuk@gmail.com before midnight. Thanks.\nWhen is the deadline time?\nA. Next week\nB. Before midnight\nC. On March\nD. Tomorrow\nE. Yesterday",
+                "Next week",
+                "Before midnight",
+                "On March",
+                "Tomorrow",
+                "Yesterday",
+                "Before midnight");
+        this.addQuestion(q33);
+        Question q34 = new Question(3, 2, "OFFICE MEMO\nTo : Aliya Latansina\nFrom : John Deep\nDate : March 10th, 2012\nPlease, send the weekly financial report to Mr. Erlan Baskoro  by E-mail at: belajarenglishyuk@gmail.com before midnight. Thanks.\nHow will Aliya Latansina send the financial report?\nA. by Hand\nB. by Post\nC. by E-mail\nD. by Fax\nE. by SMS",
+                "by Hand",
+                "by Post",
+                "by E-mail",
+                "by Fax",
+                "by SMS",
+                "by E-mail");
+        this.addQuestion(q34);
+        Question q35 = new Question(3, 2, "OFFICE MEMO\nTo : Aliya Latansina\nFrom : John Deep\nDate : March 10th, 2012\nPlease, send the weekly financial report to Mr. Erlan Baskoro  by E-mail at: belajarenglishyuk@gmail.com before midnight. Thanks.\nWho sends the message?\nA. Mrs. Miranda Sully\nB. Mr. John Deep\nC. Mrs. Aliya Latansina\nD. Mr. Erlan Baskoro\nE. Mr. Belajar English Yuk",
+                "Mrs. Miranda Sully",
+                "Mr. John Deep",
+                "Mrs. Aliya Latansina",
+                "Mr. Erlan Baskoro",
+                "Mr. Belajar English Yuk",
+                "Mr. John Deep");
+        this.addQuestion(q35);
+        Question q36 = new Question(3, 2, "Andi : What do you know about someone whose occupation involves training in a specific technical process?\nBudi : He/she is ...\nA. a architect\nB. a technician\nC. a craftsmen\nD. a plumber\nE. an engineer",
+                "a architect",
+                "a technician",
+                "a craftsmen",
+                "a plumber",
+                "an engineer",
+                "a technician");
+        this.addQuestion(q36);
+        Question q37 = new Question(3, 2, "Waiter : Excuse me. Are you ready to order?\nDinah   : Yes, can I have fish and chips, and coke? what about you, Sheila?\nSheila  : ....... please.\nWaiter : Fish and chips, coke, noodles, and hot tea. I'll be right back.\nA. A glass of coke and a bag of noodles\nB. A bag of chips and a plate of noodles\nC. A bottle of hot tea and a plate of chips\nD. A bowl of noodles and a cup of hot tea\nE. A plate of noodles and a cup of ice tea",
+                "A glass of coke and a bag of noodles",
+                "A bag of chips and a plate of noodles",
+                "A bottle of hot tea and a plate of chips",
+                "A bowl of noodles and a cup of hot tea",
+                "A plate of noodles and a cup of ice tea",
+                "A bowl of noodles and a cup of hot tea");
+        this.addQuestion(q37);
+        Question q38 = new Question(3, 2, "Duta : It will be a long weekend next week. What is your plan?\nEcha : ... There will be a family outing sponsored by the office.\nA. We have gone by a tourist bus\nB. We are going to go to Anyer\nC. We stayed in a cottage\nD. We have a barbeque\nE. We have birthday party",
+                "We have gone by a tourist bus",
+                "We are going to go to Anyer",
+                "We stayed in a cottage",
+                "We have a barbecue",
+                "We have birthday party",
+                "We are going to go to Anyer");
+        this.addQuestion(q38);
+        Question q39 = new Question(3, 2, "Psychologist: What can you say about your childhood?\nClient: I'll always remember my sweet time when I was still young. My friends and I loved to play in a small field near our houses and ... our bicycles together.\nA. we will ride\nB. we're riding\nC. we used to ride\nD. we will use to ride\nE. we have ride",
+                "we will ride",
+                "we're riding",
+                "we used to ride",
+                "we will use to ride",
+                "we have ride",
+                "we used to ride");
+        this.addQuestion(q39);
+        Question q40 = new Question(3, 2, "Student  : Can I remove the car wheels with spanner no. 10?\nMechanic : No, you can't. ... the bolts.\nA. It's too small to loosen\nB. It's enough big to loosen\nC. It's big enough to loosen\nD. It's small enough to loosen\nE. It's enough long to loosen",
+                "It's too small to loosen",
+                "It's enough big to loosen",
+                "It's big enough to loosen",
+                "It's small enough to loosen",
+                "It's enough long to loosen",
+                "It's too small to loosen");
+        this.addQuestion(q40);
+        Question q41 = new Question(1, 3, "Teks\n''Saat itu, aku satu truk dengan Siem Beng,'' kata kakek yang tadi menyebutku mirip dengan Siem Beng, ''Kami turun di markas tentara Jepang dan dibariskan. Seorang komandan Jepang memeriksa kami satu per satu. Lalu, seorang tentara Jepang menggiring kami masuk ke barak, tetapi aku lihat Siem Beng justru dibawa oleh komandan Jepang itu masuk ke kantornya. Dan, besoknya di tempat kami romusha, aku tak bertemu dengan Siem Beng.''\n\nTeks 2\nSeminggu setelah kematian Pak Brahmana, istrinya menemui Arusma Dewi dan menyerahkan sebuah catatan yang dibuat Pak Brahmana sebelum meninggal. Kata istrinya, catatan itu dibuat selama beberapa malam, bahkan kadang suaminya bekerja sampai pagi. Sekali-kali Pak Brahmana mengatakan kepada istrinya bahwa catatan itu sangat penting dan berkaitan dengan Kamus Selengkapnya Basa Kita. \n\nPersamaan kedua teks tersebut adalah...\nA. Teks 1 bertema Siem Beng yang hilang; teks 2 catatan penting Pak Brahmana \nB. Teks 1 mengandung flashback; teks 2 memiliki alur/jalan cerita yang maju\nC. Teks 1 berlatar markas tentara Jepang; teks 2 tidak dijelaskan secara tersurat \nD. Teks 1 dan teks 2 mengandung kalimat-kalimat yang berisi suatu peristiwa \nE. Teks 1 mengandung latar suasana yang tegang; teks 2 juga berlatar ketegangan",
+                "Teks 1 bertema Siem Beng yang hilang; teks 2 catatan penting Pak Brahmana",
+                "Teks 1 mengandung flashback; teks 2 memiliki alur/jalan cerita yang maju",
+                "Teks 1 berlatar markas tentara Jepang; teks 2 tidak dijelaskan secara tersurat",
+                "Teks 1 dan teks 2 mengandung kalimat-kalimat yang berisi suatu peristiwa",
+                "Teks 1 mengandung latar suasana yang tegang; teks 2 juga berlatar ketegangan",
+                "Teks 1 dan teks 2 mengandung kalimat-kalimat yang berisi suatu peristiwa");
+        this.addQuestion(q41);
+        Question q42 = new Question(1, 3, "Seorang tukang daging dan seorang ibu yang sedang sakit gigi. Suatu pagi lewatlah seorang penjual daging. ''Dageeng! Dageeengggg!!!'' teriaknya. Seorang ibu rumah tangga yang sedang sakit gigi sewot banget mendengar teriakan si tkang daging. \nIbu:''Hei tukang daging! Lu kagak punya otak ya..!!??''\nTukang daging:''Wah kebetulan gak punya, Bu. Hari ini daging semua.. yang saya bawa..''\nInterpretasi kutipan teks anekdot tersebut adalah...\nA. Seorang ibu yang sedang sakit gigi marah-marah pada tukang daging yang berteriak menjual dagangannya \nB. Seorang ibu yang membeli daging pada tukang daging \nC. Seorang tukang daging yang sedang sakit gigi dan marah-marah \nD. Seorang ibu yang ingin membeli otak pada tukang daging \nE. Seorang tukang daging yang menjual otak-otak",
+                "Seorang ibu yang sedang sakit gigi marah-marah pada tukang daging yang berteriak menjual dagangannya",
+                "Seorang ibu yang membeli daging pada tukang daging",
+                "Seorang tukang daging yang sedang sakit gigi dan marah-marah",
+                "Seorang ibu yang ingin membeli otak pada tukang daging",
+                "Seorang tukang daging yang menjual otak-otak",
+                "Seorang ibu yang sedang sakit gigi marah-marah pada tukang daging yang berteriak menjual dagangannya");
+        this.addQuestion(q42);
+        Question q43 = new Question(1, 3, "Para petani Desa Simpang Kanan, di Kabupaten Tanggamus telah berhasil menerapkan ... yang meliputi pemanfaat pupuk, benih unggul, pestisida, irigasi, dan cara bercocok tanam dengan baik. \nKata yang paling tepat untuk melengkapi bagian kalimat yang dirumpangkan tersebut adalah ... \nA. pancawara \nB. pancausaha \nC. pancawarsa \nD. pancarona \nE. pancasada",
+                "pancawara",
+                "pancausaha",
+                "pancawarsa",
+                "pancarona",
+                "pancasada",
+                "pancausaha");
+        this.addQuestion(q43);
+        Question q44 = new Question(1, 3, "Melengking. Suara Ali memanggil, suara azan menembus atap menyayat dan berirama. Kembali lantang. Menuju lembah, sawah, menyeruak rumah-rumah, jendela-jendela, menyapa... \nParagraf deskripsi tersebut dapat dilengkapi dengan kalimat ... \nA. anak-anak di pematang sawah \nB. mengingatkan kita sholat \nC. terdengar di lingkungan perkebunan \nD. orang-orang yang tetap sibuk bekerja \nE. terdengar nyari dari kejauhan",
+                "anak-anak di pematang sawah",
+                "mengingatkan kita sholat",
+                "terdengar di lingkungan perkebunan",
+                "orang-orang yang tetap sibuk bekerja",
+                "terdengar nyari dari kejauhan",
+                "mengingatkan kita sholat");
+        this.addQuestion(q44);
+        Question q45 = new Question(1, 3, "Sejak Operasi Halilintar itu, polisi Irak juga berjaga-jaga di jalanan, baik siang maupun malam. ... Karena itulah Operasi Halilintar ini kurang mendapat simpati di kalangan Sunni Arab. Pasalnya, yang kerap diperiksa dan digeledah rumahnya adalah kaum Sunni Arab. Banyak warga yang mengaku bahwa pasukan Irak atau pun AS kerap menangkap warga yang tidak bersalah. \nKalimat yang tepat untuk melengkapi bagian yang rumpang agar menjadi paragraf yang lengkap dan padu adalah... \nA. Polisi Irak dalam tugasnya berpakaian sipil, namun bersenjata \nB. Pos-pos pemeriksaan pun kini berada di hampir setiap jalan masuk ke kota \nC. Mereka bersenjata, lengkap dengan rompi antipelurunya \nD. Amerika pun tidak tinggal diam membantu polisi Irak tersebut \nE. Banyak yang tidak tahu, apa yang terjadi di Irak",
+                "Polisi Irak dalam tugasnya berpakaian sipil, namun bersenjata",
+                "Pos-pos pemeriksaan pun kini berada di hampir setiap jalan masuk ke kota",
+                "Mereka bersenjata, lengkap dengan rompi antipelurunya",
+                "Amerika pun tidak tinggal diam membantu polisi Irak tersebut",
+                "Banyak yang tidak tahu, apa yang terjadi di Irak",
+                "Pos-pos pemeriksaan pun kini berada di hampir setiap jalan masuk ke kota");
+        this.addQuestion(q45);
+        Question q46 = new Question(1, 3, "Terakhir, profesionalisme sumber daya manusia sangat penting. Kerja intelejen harus jernih, objektif, dan akurat. Lembaga intelejen harus terbebas dari afiliasi partai politik agar dapat netral. ... \nKalimat penutup yang berisi ajakan dan penekanan yang tepat untuk melengkapi paragraf tersebut adalah ... \nA. Marilah kita usahakan agar badan intelejen tersebut kita jaga kenetralitasannya \nB. Oleh karena itu, sistem rekruitmen harus diubah, termasuk pola pembinaan dan pendidikan \nC. Tentu saja sistem pembinaan dan pola pendidikan intelejen harus bebas dari pengaruh politik \nD. Harapan kita, inteleen harus bisa bekerja secara maksimal \nE. Dengan demikian, lembaga intelejen kita lebih profesional",
+                "Marilah kita usahakan agar badan intelejen tersebut kita jaga kenetralitasannya",
+                "Oleh karena itu, sistem rekruitmen harus diubah, termasuk pola pembinaan dan pendidikan",
+                "Tentu saja sistem pembinaan dan pola pendidikan intelejen harus bebas dari pengaruh politik",
+                "Harapan kita, inteleen harus bisa bekerja secara maksimal",
+                "Dengan demikian, lembaga intelejen kita lebih profesional",
+                "Oleh karena itu, sistem rekruitmen harus diubah, termasuk pola pembinaan dan pendidikan");
+        this.addQuestion(q46);
+        Question q47 = new Question(1, 3, "Pergi berlibur ke pantai\nPulangnya naik odong-odong\nJadilah anak yang pandai\n...\nLarik yang tepat untuk melengkapi pantun tersebut adalah...\nA. Jangan selalu tolong-menolong\nB. Perangai baik dan tidak sombong\nC. Punya teman suka menolong\nD. Jangan bicara omong kosong\nE. Punya otak janganlah bohong",
+                "Jangan selalu tolong-menolong",
+                "Perangai baik dan tidak sombong",
+                "Punya teman suka menolong",
+                "Jangan bicara omong kosong",
+                "Punya otak janganlah bohong",
+                "Perangai baik dan tidak sombong");
+        this.addQuestion(q47);
+        Question q48 = new Question(1, 3, "Buku Pengkajian Puisi karya Rahmat Joko Pradopo ini pembahasannya sangat bagus karena dilengkapi dengan contoh-contoh analisis sembiotiknya maupun hubungan intertekstualnya. Analisis yang cukup rinci akan menambah pengetahuan pembaca untuk memahami puisi. ...\nKalimat yang tepat untuk melengkapi teks ulasan tersebut adalah...\nA. Buku tersebut wajib kita beli karena isinya sangat bermanfaat\nB. Buku itu sangat bagus dan sudah dilengkapi dengan pembahasan\nC. Karena kita bukan ahli dalam bidang puisi sebaiknya kita membaca buku ini\nD. Buku ini layak dimiliki pembaca yang ingin belajar memahami puisi\nE. Kita perlu membaca buku ini meskipun kita tidak suka dengan puisi",
+                "Buku tersebut wajib kita beli karena isinya sangat bermanfaat",
+                "Buku itu sangat bagus dan sudah dilengkapi dengan pembahasan",
+                "Karena kita bukan ahli dalam bidang puisi sebaiknya kita membaca buku ini",
+                "Buku ini layak dimiliki pembaca yang ingin belajar memahami puisi",
+                "Kita perlu membaca buku ini meskipun kita tidak suka dengan puisi",
+                "Buku ini layak dimiliki pembaca yang ingin belajar memahami puisi");
+        this.addQuestion(q48);
+        Question q49 = new Question(1, 3, "Dayata : ''Bolehkah saya mencoba puding karamel yang baru saja dibuat itu?''\nSheky:''Tentu saja boleh, bagaimana rasanya?''\nDayata:''...''\nKalimat untuk melengkapi teks percakapan tersebut adalah...\nA. Sangat mahal, saya pikir\nB. Itu sangat lezat, saya benar-benar menikmati rasanya\nC. Saya pikir saya akan memasak sendiri\nD. Saya tidak berpikir saya akan datang dengan kamu\nE. Saya kurang menikmati",
+                "Sangat mahal, saya pikir",
+                "Itu sangat lezat, saya benar-benar menikmati rasanya",
+                "Saya pikir saya akan memasak sendiri",
+                "Saya tidak berpikir saya akan datang dengan kamu",
+                "Saya kurang menikmati",
+                "Itu sangat lezat, saya benar-benar menikmati rasanya");
+        this.addQuestion(q49);
+        Question q50 = new Question(1, 3, "(1) Hari itu adalah hari yang agak penting: hari pertama masuk SD\n(2)Sebatang pohon jati tua yang rindang meneduhiku\n(3)Pagi itu, waktu aku masih kecil, aku duduk di bangku panjang di depan sebuah kelas\n(4)Ayahku duduk di sampingku, memeluk pundakku dengan kedua lenganna dan tersentum mengangguk-angguk pada setiap orang tua dan anak-anaknya yang duduk berderet di bangku panjang lain di depan kami\nUrutan yang tepat untuk penggalan cerita tersebut adalah...\nA. (1)-(4)-(2)-(3)\nB. (3)-(2)-(1)-(4)\nC. (3)-(4)-(2)-(1)\nD. (3)-(2)-(4)-(1)\nE. (1)-(2)-(4)-(3)",
+                "(1)-(4)-(2)-(3)",
+                "(3)-(2)-(1)-(4)",
+                "(3)-(4)-(2)-(1)",
+                "(3)-(2)-(4)-(1)",
+                "(1)-(2)-(4)-(3)",
+                "(3)-(2)-(4)-(1)");
+        this.addQuestion(q50);
+        Question q51 = new Question(3, 3, "My neighbor bought a new computer last week. She asked me to tell her the instruction. Here they are:\n1. Plug the power cord\n2. Press the power button on. After a few minutes you will see a windows menu on the monitor\n3. Look at the left button of the monitor\n4. Then hold the mouse genthly\n5. Move the arrow pointer on to the 'Start' menu\n6. Click it\n7. Click the program menu and choose MS-Word.\nNow you are ready to type\n What should we do ater we move the arrow?\nA. move the arrow\nB. click the start menu\nC. plug the power cord\nD. look at the left button\nE. press the power button",
+                "move the arrow",
+                "click the start menu",
+                "plug the power cord",
+                "look at the left button",
+                "press the power button",
+                "click the start menu");
+        this.addQuestion(q51);
+        Question q52 = new Question(3, 3, "My neighbour bought a new computer last week. She asked me to tell her the instruction. Here they are:\n1. Plug the power cord\n2. Press the power button on. After a few minutes you will see a windows menu on the monitor\n3. Look at the left button of the monitor\n4. Then hold the mouse genthly\n5. Move the arrow pointer on to the 'Start' menu\n6. Click it\n7. Click the program menu and choose MS-Word.\nNow you are ready to type\n According to the text, we know that the computer...\nA. belonged to the writer\nB. was not ready to be used\nC. was bought by the writer\nD. belonged to the writer's neighbour\nE. was bought yesterday",
+                "belonged to the writer",
+                "was not ready to be used",
+                "was bought by the writer",
+                "belonged to the writer's neighbour",
+                "was bought yesterday",
+                "belonged to the writer's neighbour");
+        this.addQuestion(q52);
+        Question q53 = new Question(3, 3, "Arif : What have they done?\nBudi : ...\nA. They finished playing football\nB. They have finsih playing football\nC. They have been finished playing football\nD. They have been finishing to play football\nE. They have just finished playing football",
+                "They finished playing football",
+                "They have finsih playing football",
+                "They have been finished playing football",
+                "They have been finishing to play football",
+                "They have just finished playing football",
+                "They have just finished playing football");
+        this.addQuestion(q53);
+        Question q54 = new Question(3, 3, "Ahmad : What are you doing\nNana : I ... shopping\nA. is\nB. am\nC. are\nD. have\nE. has",
+                "is",
+                "am",
+                "are",
+                "have",
+                "has",
+                "am");
+        this.addQuestion(q54);
+        Question q55 = new Question(3, 3, "Peter is the youngest in our family. He is fourteen years old and four years younger than me. He has long, straight hair, bright eyes and a friendly smile. Sometimes he is rather naughty at home, but he usually does what he is asked to do.\nPeter is interested i sports very much, and at school, he plays football and tennis. He is the best badminton player in our family\nWhat is the topic of the text?\nA. The description of Peter\nB. Peter's sport interests \nC. Peter's age\nD. Peter's characteristic\nE. Peter's naughty",
+                "The description of Peter",
+                "Peter's sport interests",
+                "Peter's age",
+                "Peter's characteristic",
+                "Peter's naughty",
+                "The description of Peter");
+        this.addQuestion(q55);
+        Question q56 = new Question(3, 3, "Peter is the youngest in our family. He is fourteen years old and four years younger than me. He has long, straight hair, bright eyes and a friendly smile. Sometimes he is rather naughty at home, but he usually does what he is asked to do.\nPeter is interested i sports very much, and at school, he plays football and tennis. He is the best badminton player in our family\nWhat is the use or the purpose of the text above?\nA. To retell something that happened in the past\nB. Inform readers about events of the day\nC. Help readers how to do or make something\nD. To describe a particular person\nE. To present information and opinions about issues in more one side of an issue",
+                "To retell something that happened in the past",
+                "Inform readers about events of the day",
+                "Help readers how to do or make something",
+                "To describe a particular person",
+                "To present information and opinions about issues in more one side of an issue",
+                "To describe a particular person");
+        this.addQuestion(q56);
+        Question q57 = new Question(3, 3, "Peter is the youngest in our family. He is fourteen years old and four years younger than me. He has long, straight hair, bright eyes and a friendly smile. Sometimes he is rather naughty at home, but he usually does what he is asked to do.\n" + "Peter is interested i sports very much, and at school, he plays football and tennis. He is the best badminton player in our family\nFrom the text, we know that... \nA. many people do not like Peter\nB. Peter is older than the writer\nC. Peter is a welcoming person\nD. Peter is not diligent at all\nE. Peter is awkward boy",
+                "many people do not like Peter",
+                "Peter is older than the writer",
+                "Peter is a welcoming person",
+                "Peter is not diligent at all",
+                "Peter is awkward boy",
+                "Peter is a welcoming person");
+        this.addQuestion(q57);
+        Question q58 = new Question(3, 3, "Orchid is one of the most beautiful (8)... on earth. Its trunk is thick and budding. Leaves are long, stiff and thick. The colour of this plant can be (9)... by using crossing method. It can be white, purple, yellow or others. People like to use orchid as a decorative plant. Orchid usually grows (10)... on tree but it is not a parasite. It can only produce flowers not fruit.",
+                "plants",
+                "leaves",
+                "flowers",
+                "trees",
+                "stems",
+                "flowers");
+        this.addQuestion(q58);
+        Question q59 = new Question(3, 3, "Orchid is one of the most beautiful (8)... on earth. Its trunk is thick and budding. Leaves are long, stiff and thick. The colour of this plant can be (9)... by using crossing method. It can be white, purple, yellow or others. People like to use orchid as a decorative plant. Orchid usually grows (10)... on tree but it is not a parasite. It can only produce flowers not fruit.",
+                "similar",
+                "various",
+                "famous",
+                "difficult",
+                "same",
+                "various");
+        this.addQuestion(q59);
+        Question q60 = new Question(3, 3, "Orchid is one of the most beautiful (8)... on earth. Its trunk is thick and budding. Leaves are long, stiff and thick. The colour of this plant can be (9)... by using crossing method. It can be white, purple, yellow or others. People like to use orchid as a decorative plant. Orchid usually grows (10)... on tree but it is not a parasite. It can only produce flowers not fruit.",
+                "well",
+                "slowly",
+                "fast",
+                "hard",
+                "difficult",
+                "well");
+        this.addQuestion(q60);
         // END
     }
 
