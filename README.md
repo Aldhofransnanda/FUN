@@ -21,6 +21,9 @@ Kelas : XIIRPL1
 Sekolah : SMK Telkom Malang
 <br>
 <br>
+Video Aplikasi :
+[LINK-Apk](https://drive.google.com/file/d/0B7PzuWrOjVW-WnQ0YUMzdEQzS1k/view?usp=sharing)
+<br>
 <br>
 <b>SCREENSHOOT HASIL APLIKASI</b>
 <br>
