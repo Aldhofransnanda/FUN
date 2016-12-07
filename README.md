@@ -22,7 +22,7 @@ Sekolah : SMK Telkom Malang
 <br>
 <br>
 Video Aplikasi :
-[LINK-Apk](https://drive.google.com/file/d/0B7PzuWrOjVW-WnQ0YUMzdEQzS1k/view?usp=sharing)
+[![Alt text](https://img.youtube.com/vi/29bzIQetY4g/1.jpg)](https://www.youtube.com/watch?v=29bzIQetY4g)
 <br>
 <br>
 <b>SCREENSHOOT HASIL APLIKASI</b>
@@ -32,11 +32,13 @@ Video Aplikasi :
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Main.png)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Help.png)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailHelp.png)<br><br>
-![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailPlay.png)<br><br>
-![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailPlayChapter.png)<br><br>
-![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ChapterKlik.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ChooseNew.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ChapterNew.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailSoalChapterNew.jpeg)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Soal.jpeg)<br><br>
-![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Skor.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailChapterNew.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ScorNew.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/StatistikNew.jpeg)<br><br>
 
 
 <b>FUN (Fight for UN)</b>
