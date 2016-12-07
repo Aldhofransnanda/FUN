@@ -1,12 +1,10 @@
 package id.sch.smktelkom_mlg.project.xiirpl106162636.fun;
 
-import android.app.Activity;
-
 /**
  * Created by Fadwa on 20/11/2016.
  */
 
-public class Score extends Activity {
+public class Score {
     private int ID_SCORE;
     private int ID_LESSON;
     private String LESSON_NAME;

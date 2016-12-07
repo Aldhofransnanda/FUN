@@ -25,6 +25,7 @@ public class QuizHelper extends SQLiteOpenHelper {
     private static final String TABLE_CHAPTER = "chapter";
     private static final String TABLE_LESSON = "lesson";
 
+
     // tasks Question Table Columns names
     private static final String KEY_ID = "qid";
     private static final String KEY_QUES = "question";
@@ -74,6 +75,7 @@ public class QuizHelper extends SQLiteOpenHelper {
         addQuestion();
         addChapter();
         addLesson();
+        addScore();
         // db.close();
     }
 
@@ -703,7 +705,6 @@ public class QuizHelper extends SQLiteOpenHelper {
 
         Log.d("cursor", cursor.toString());
 
-
         if (cursor.moveToFirst()) {
             do {
                 Score model = new Score();
@@ -723,7 +724,6 @@ public class QuizHelper extends SQLiteOpenHelper {
 
         return modelList;
     }
-
 
 }
 

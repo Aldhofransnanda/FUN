@@ -39,28 +39,28 @@
             android:id="@+id/buttonChapter1"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-
+            android:layout_height="80dp"
             android:backgroundTint="@android:color/holo_blue_dark"
-            android:text="Chapter 1"
+            android:text="Chapter 1&#10;(Soal 1 - 10)"
+            android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
 
         <Button
             android:id="@+id/buttonChapter2"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="80dp"
             android:backgroundTint="@color/colorPrimaryDark"
-            android:text="Chapter 2"
+            android:text="Chapter 2&#10;(Soal 11 - 20)"
             android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
 
         <Button
             android:id="@+id/buttonChapter3"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="80dp"
             android:backgroundTint="@android:color/holo_orange_dark"
-            android:text="Chapter 3"
+            android:text="Chapter 3&#10;(Soal 21 - 30)"
             android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
 
     </LinearLayout>

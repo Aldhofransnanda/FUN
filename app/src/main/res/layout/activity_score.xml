@@ -23,29 +23,16 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
     </android.support.design.widget.AppBarLayout>
 
-    <TextView
-        android:id="@+id/textView7"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="Scoreboard"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:orientation="horizontal"
+        android:weightSum="1">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView7"
-        android:orientation="vertical">
-
-        <ListView
-            android:id="@android:id/list"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"></ListView>
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 

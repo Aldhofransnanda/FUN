@@ -29,6 +29,7 @@ public class PlayDetailActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("Pilih Chapter");
 
         cobalesson = (TextView) findViewById(R.id.textView);
         final Intent lesson = getIntent();

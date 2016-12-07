@@ -21,54 +21,11 @@
         app:cardElevation="4dp">
 
         <ImageView
-            android:id="@+id/imageViewMat"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/mat" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="12dp"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="0dp"
-            app:cardMaxElevation="0dp">
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MATEMATIKA"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-                android:typeface="sans" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView1"
-                android:text="4 Bab Belum DIkerjakan"
-                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
-                android:typeface="sans" />
-        </RelativeLayout>
-
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
-        android:layout_weight="1"
-        android:padding="12dp"
-        app:cardElevation="4dp">
-
-        <ImageView
             android:id="@+id/imageViewBin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/bindo" />
+            app:srcCompat="@drawable/bin" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -111,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/bing" />
+            app:srcCompat="@drawable/bingg" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -140,4 +97,48 @@
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewMat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/matem" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MATEMATIKA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:text="4 Bab Belum DIkerjakan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
 </LinearLayout>

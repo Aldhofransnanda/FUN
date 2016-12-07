@@ -149,7 +149,7 @@ public class SlidingQuiz extends AppCompatActivity implements FragmentCommunicat
             mapel = "Bahasa Inggris";
 
 
-        basDat = openOrCreateDatabase("mathsone", Context.MODE_PRIVATE, null);
+        basDat = openOrCreateDatabase("db_fun", Context.MODE_PRIVATE, null);
         String query = "INSERT INTO score values (null, '" + j + "', '" + mapel + "', '" + k + "', '" + score + "');";
         basDat.execSQL(query);
 
