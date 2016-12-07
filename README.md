@@ -32,11 +32,12 @@ Video Aplikasi :
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Main.png)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Help.png)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailHelp.png)<br><br>
-![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailPlay.png)<br><br>
-![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailPlayChapter.png)<br><br>
-![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ChapterKlik.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ChooseNew.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ChapterNew.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailSoalChapterNew.jpeg)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Soal.jpeg)<br><br>
-![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Skor.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ScorNew.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/StatistikNew.jpeg)<br><br>
 
 
 <b>FUN (Fight for UN)</b>
