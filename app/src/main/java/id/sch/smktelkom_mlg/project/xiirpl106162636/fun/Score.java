@@ -1,8 +1,8 @@
 package id.sch.smktelkom_mlg.project.xiirpl106162636.fun;
 
 /**
- * Created by Fadwa on 20/11/2016.
- */
+ * Created by Fadwa on 20/11/2016.*/
+
 
 public class Score {
     private int ID_SCORE;

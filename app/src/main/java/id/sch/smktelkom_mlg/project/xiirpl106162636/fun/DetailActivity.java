@@ -16,6 +16,7 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         help help = (help) getIntent().getSerializableExtra(HelpActivity.HELP);
+
         ImageView ivFoto = (ImageView) findViewById(R.id.imageFoto);
         ivFoto.setImageURI(Uri.parse(help.foto));
         TextView tvDeskripsi = (TextView) findViewById(R.id.detail);
