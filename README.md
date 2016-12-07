@@ -22,7 +22,7 @@ Sekolah : SMK Telkom Malang
 <br>
 <br>
 Video Aplikasi :
-[LINK-Apk](https://drive.google.com/file/d/0B7PzuWrOjVW-WnQ0YUMzdEQzS1k/view?usp=sharing)
+[![Alt text](https://img.youtube.com/vi/29bzIQetY4g&feature=youtu.be/1)](https://www.youtube.com/watch?v=29bzIQetY4g&feature=youtu.be)
 <br>
 <br>
 <b>SCREENSHOOT HASIL APLIKASI</b>
