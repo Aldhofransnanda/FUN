@@ -36,6 +36,7 @@ Video Aplikasi :
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ChapterNew.jpeg)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailSoalChapterNew.jpeg)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/Soal.jpeg)<br><br>
+![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/DetailChapterNew.jpeg)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/ScorNew.jpeg)<br><br>
 ![Gambar](https://raw.githubusercontent.com/Aldhofransnanda/FUN/master/StatistikNew.jpeg)<br><br>
 
